@@ -1,0 +1,74 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #87CEEB; /* Color azul cielo */
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    max-width: 800px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+h1 {
+    grid-column: span 2;
+    color: #333;
+    font-size: 3em;
+    margin-bottom: 20px;
+    background: linear-gradient(45deg, #8A2BE2, #FF1493);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.converter {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.converter h2 {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.converter input, .converter select, .converter button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.converter button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.converter button:hover {
+    background-color: #45a049;
+}
+
+#length-result, #volume-result, #weight-result, #temperature-result {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+    padding: 10px;
+    background-color: #e0f7fa; /* Fondo diferente para resultados */
+    border-radius: 8px;
+}
