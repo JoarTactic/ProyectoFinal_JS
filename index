@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Unidades</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de Unidades</h1>
+        <div class="converter">
+            <h2>Conversión de Longitud</h2>
+            <input type="number" id="length-input" placeholder="Metros">
+            <select id="length-unit">
+                <option value="meters">Metros</option>
+                <option value="kilometers">Kilómetros</option>
+                <option value="centimeters">Centímetros</option>
+                <option value="millimeters">Milímetros</option>
+                <option value="miles">Millas</option>
+                <option value="yards">Yardas</option>
+                <option value="feet">Pies</option>
+                <option value="inches">Pulgadas</option>
+            </select>
+            <button onclick="convertLength()">Convertir</button>
+            <p id="length-result"></p>
+        </div>
+
+        <div class="converter">
+            <h2>Conversión de Volumen</h2>
+            <input type="number" id="volume-input" placeholder="Litros">
+            <select id="volume-unit">
+                <option value="liters">Litros</option>
+                <option value="milliliters">Mililitros</option>
+                <option value="gallons">Galones</option>
+                <option value="quarts">Cuartos</option>
+                <option value="pints">Pintas</option>
+                <option value="cups">Tazas</option>
+                <option value="fluid ounces">Onzas Líquidas</option>
+            </select>
+            <button onclick="convertVolume()">Convertir</button>
+            <p id="volume-result"></p>
+        </div>
+
+        <div class="converter">
+            <h2>Conversión de Peso</h2>
+            <input type="number" id="weight-input" placeholder="Kilos">
+            <select id="weight-unit">
+                <option value="kilograms">Kilos</option>
+                <option value="grams">Gramos</option>
+                <option value="milligrams">Miligramos</option>
+                <option value="pounds">Libras</option>
+                <option value="ounces">Onzas</option>
+            </select>
+            <button onclick="convertWeight()">Convertir</button>
+            <p id="weight-result"></p>
+        </div>
+
+        <div class="converter">
+            <h2>Conversión de Temperatura</h2>
+            <input type="number" id="temperature-input" placeholder="Grados Celsius">
+            <select id="temperature-unit">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+            <button onclick="convertTemperature()">Convertir</button>
+            <p id="temperature-result"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
